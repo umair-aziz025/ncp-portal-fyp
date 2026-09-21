@@ -1,0 +1,39 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // ID Cards - Only accessible by owner and admins
+    match /id_cards/{userId}/{fileName} {
+      allow read: if request.auth != null &&
+        (request.auth.uid == userId ||
+         firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role in ["super_admin", "dept_admin"]);
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Profile Pictures - Readable by all authenticated users, writable by owner
+    match /profile_pictures/{userId}/{fileName} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Resources - Faculty can upload, all can read
+    match /resources/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null &&
+        firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role in ["faculty", "super_admin", "dept_admin"];
+    }
+
+    // Feedback Attachments - All authenticated users can read/write
+    match /feedback_attachments/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+
+    // Notification Attachments - Faculty/Admin can write, all can read
+    match /notification_attachments/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null &&
+        firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role in ["faculty", "super_admin", "dept_admin"];
+    }
+  }
+}
