@@ -1,3 +1,5 @@
+<div align="center">
+
 # University Notification & Communication Portal (NCP)
 
 A modern, full-featured web platform for university communication and resource management built with React, TypeScript, Firebase, and Tailwind CSS.
@@ -6,6 +8,8 @@ A modern, full-featured web platform for university communication and resource m
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue)
 ![React](https://img.shields.io/badge/React-18.3-61dafb)
 ![Firebase](https://img.shields.io/badge/Firebase-12.6-orange)
+
+</div>
 
 ---
 
@@ -306,6 +310,6 @@ For issues or questions:
 3. Check browser console for errors
 4. Contact project maintainers
 
----
-
-**Made with ❤️ for educational purposes**
+<p align="center">
+  <b>Made with ❤️ for educational purposes</b>
+</p>
