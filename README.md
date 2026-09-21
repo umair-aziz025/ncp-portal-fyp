@@ -1,21 +1,22 @@
-<div align="center">
+# 🎓 University Notification & Communication Portal (NCP)
 
-# University Notification & Communication Portal (NCP)
+<p align="center">
+  <img alt="Build" src="https://img.shields.io/badge/build-passing-34d399?style=for-the-badge" />
+  <img alt="React" src="https://img.shields.io/badge/React-18.3-61dafb?style=for-the-badge&logo=react&logoColor=111827" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.5-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="Firebase" src="https://img.shields.io/badge/Firebase-12.6-ffca28?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-3.4-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-5.4-646cff?style=for-the-badge&logo=vite&logoColor=white" />
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge" />
+</p>
 
-A modern, full-featured web platform for university communication and resource management built with React, TypeScript, Firebase, and Tailwind CSS.
-
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue)
-![React](https://img.shields.io/badge/React-18.3-61dafb)
-![Firebase](https://img.shields.io/badge/Firebase-12.6-orange)
-
-</div>
+**A modern, full-featured web platform for university communication and resource management built with React, TypeScript, Firebase, and Tailwind CSS.**
 
 ---
 
-## Features
+## ✨ Features
 
-### Core Functionality
+### 🎯 Core Functionality
 - **User Authentication**: Email/password registration with ID card verification
 - **Admin Approval System**: Pending user verification with ID card review
 - **Role-Based Access Control**: Student, Faculty, Department Admin, Super Admin
@@ -23,7 +24,7 @@ A modern, full-featured web platform for university communication and resource m
 - **Responsive Design**: Optimized for mobile and desktop
 - **AI Chatbot**: Academic-focused assistant with context-aware responses
 
-### User Roles & Permissions
+### 👥 User Roles & Permissions
 
 | Role | Permissions |
 |------|------------|
@@ -34,7 +35,7 @@ A modern, full-featured web platform for university communication and resource m
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend**: React 18 + TypeScript + Vite
 - **Styling**: Tailwind CSS + Framer Motion
@@ -45,9 +46,9 @@ A modern, full-featured web platform for university communication and resource m
 
 ---
 
-## Quick Start
+## ⚡ Quick Start
 
-### Prerequisites
+### 📋 Prerequisites
 - Node.js 18+
 - Firebase account
 - npm or yarn
@@ -76,7 +77,7 @@ See `QUICK_START.md` for step-by-step instructions.
 
 ---
 
-## Documentation
+## 📚 Documentation
 
 - **[QUICK_START.md](./QUICK_START.md)** - Get started in 5 minutes
 - **[SETUP_GUIDE.md](./SETUP_GUIDE.md)** - Complete setup documentation
@@ -86,7 +87,7 @@ See `QUICK_START.md` for step-by-step instructions.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 university-ncp/
@@ -105,7 +106,7 @@ university-ncp/
 
 ---
 
-## Available Scripts
+## 💻 Available Scripts
 
 | Command | Description |
 |---------|-------------|
@@ -117,26 +118,26 @@ university-ncp/
 
 ---
 
-## Key Components
+## 🔑 Key Components
 
-### Authentication Flow
+### 🔐 Authentication Flow
 1. **Register** → Upload ID card → Set to "pending" status
 2. **Admin Review** → View ID card → Approve/Reject
 3. **Login** → Status check → Redirect to dashboard or pending page
 
-### Admin Dashboard
+### 📊 Admin Dashboard
 - View pending users with statistics
 - Preview ID cards in modal
 - Approve or reject with one click
 - Department filtering for dept admins
 
-### User Interface
+### 🎨 User Interface
 - Top navigation with profile dropdown
 - Sidebar with role-based menu items
 - Dashboard with quick actions
 - Theme toggle (light/dark mode)
 
-### AI Chatbot
+### 🤖 AI Chatbot
 - Floating chat bubble (bottom-right)
 - Academic-only responses
 - Context-aware suggestions
@@ -144,7 +145,7 @@ university-ncp/
 
 ---
 
-## Firebase Collections
+## 🗄️ Firebase Collections
 
 ### users
 User profiles with authentication data, department, role, and status.
@@ -168,15 +169,15 @@ See `FIRESTORE_DATA_MODEL.md` for detailed schema.
 
 ---
 
-## Security
+## 🛡️ Security
 
-### Firestore Rules
+### 🔒 Firestore Rules
 - Authenticated users can only read/write their own data
 - Admins can approve/reject pending users
 - Faculty can upload resources and create notifications
 - Students have read-only access to approved content
 
-### Storage Rules
+### 📦 Storage Rules
 - ID cards visible only to owner and admins
 - Profile pictures visible to all authenticated users
 - Resources can be uploaded by faculty only
@@ -184,7 +185,7 @@ See `FIRESTORE_DATA_MODEL.md` for detailed schema.
 
 ---
 
-## Development Status
+## 📈 Development Status
 
 ### ✅ Completed
 - User registration with ID card upload
@@ -212,7 +213,7 @@ See `FIRESTORE_DATA_MODEL.md` for detailed schema.
 
 ---
 
-## Browser Support
+## 🌐 Browser Support
 
 - Chrome/Edge (latest)
 - Firefox (latest)
@@ -221,7 +222,7 @@ See `FIRESTORE_DATA_MODEL.md` for detailed schema.
 
 ---
 
-## Performance
+## 🚀 Performance
 
 - Build size: ~857KB (gzipped: 230KB)
 - First load: < 2s
@@ -234,7 +235,7 @@ Optimization recommendations:
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 This is a university project. For internal contributions:
 1. Create a feature branch
@@ -244,9 +245,9 @@ This is a university project. For internal contributions:
 
 ---
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
-### Common Issues
+### ❓ Common Issues
 
 **Build fails**
 ```bash
@@ -266,7 +267,7 @@ See `QUICK_START.md` for more troubleshooting tips.
 
 ---
 
-## Environment Variables
+## 🔐 Environment Variables
 
 Required in `.env`:
 ```env
@@ -286,13 +287,13 @@ VITE_OPENAI_API_KEY=your_openai_key
 
 ---
 
-## License
+## 📄 License
 
 This project is developed as part of a university coursework.
 
 ---
 
-## Acknowledgments
+## 👏 Acknowledgments
 
 - React team for the amazing framework
 - Firebase team for backend services
@@ -302,7 +303,7 @@ This project is developed as part of a university coursework.
 
 ---
 
-## Contact & Support
+## 📬 Contact & Support
 
 For issues or questions:
 1. Check the documentation files
